@@ -104,13 +104,15 @@ h2 {
 }
 
 .profile_image {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
   display: block;
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 50%; /* for circular profile */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
+
 
 
 /* Skills */
