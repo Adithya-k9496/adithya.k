@@ -13,7 +13,7 @@ Visit my live portfolio here:
 
 ## 🎯 Features
 
-- ✅ Single-page responsive design
+- ✅ Single-page responsive design.
 - ✅ Animated introduction with looping profile video
 - ✅ Skills section with icons and experience levels
 - ✅ Project cards with highlights
