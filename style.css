@@ -41,6 +41,8 @@ body {
   padding-left: 2cm;
   background-color: #f9f5ff;
   font-size: 30px;
+  border-radius: 15px;
+  transform: translateX(10px);
 }
 
 .profile_name .contact_info {
