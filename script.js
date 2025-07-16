@@ -3,7 +3,7 @@ function addRecommendation() {
   let name = document.getElementById("recommender_name");
 
   if (recommendation.value.trim() !== "") {
-    showPopup(true);
+    showPopup(true); 
 
     let element = document.createElement("div");
     element.setAttribute("class", "recommendation");
