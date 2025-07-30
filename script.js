@@ -1,23 +1,29 @@
-function addRecommendation() {
-  let recommendation = document.getElementById("new_recommendation");
-  let name = document.getElementById("recommender_name");
+document.getElementById("recommendForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
 
-  if (recommendation.value.trim() !== "") {
-    showPopup(true); 
+    let form = event.target;
+    let formData = new FormData(form);
 
-    let element = document.createElement("div");
-    element.setAttribute("class", "recommendation");
+    try {
+        let response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
 
-    let nameHTML = name.value.trim() !== "" ? `<br><br><strong>– ${name.value.trim()}</strong>` : "";
-    element.innerHTML = `<span>&#8220;</span>${recommendation.value}${nameHTML}<span>&#8221;</span>`;
+        if (response.ok) {
+            showPopup(true);
 
-    document.getElementById("all_recommendations").appendChild(element);
-
-    recommendation.value = "";
-    name.value = "";
-  }
-}
+            form.reset();
+        } else {
+            alert("❌ Oops! Something went wrong. Please try again.");
+        }
+    } catch (error) {
+        alert("⚠️ Network error. Please try again.");
+        console.error("Form submission error:", error);
+    }
+});
 
 function showPopup(bool) {
-  document.getElementById("popup").style.display = bool ? "flex" : "none";
+    document.getElementById("popup").style.display = bool ? "flex" : "none";
 }
