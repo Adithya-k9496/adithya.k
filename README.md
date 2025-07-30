@@ -4,7 +4,7 @@ Welcome to my personal **developer portfolio** website — a fully responsive, s
 
 ---
 
-## 🔗 Live Site
+## 🔗 Live Site 
 
 Visit my live portfolio here:  
 👉  [Click here to view my portfolio](https://adithya-k9496.github.io/adithya.k/)
