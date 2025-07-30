@@ -19,10 +19,10 @@ Visit my live portfolio here:
 - ✅ Project cards with highlights
 - ✅ Social media icons with hover animation
 - ✅ Recommendation form with popup confirmation
-- ✅ Recommendations are **saved in `localStorage`** and persist across sessions
 - ✅ Scroll-to-top button
 - ✅ GitHub Pages deployment
 - ✅ Clean UI with subtle shadows and hover effects
+- ✅ All the recommendation will be send to the author of this github
 
 ---
 
