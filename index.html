@@ -37,7 +37,7 @@
     <!-- About Me -->
     <section id="about-me" class="container">
       <div>
-        <img class="profile_image" src="html_finalprojimages/profile_image.png" alt="Profile photo of Adithya K"/>
+        <img class="profile_image" src="html_finalprojimages/profile_image.png" alt="Profile photo of Adithya K" />
       </div>
 
       <div>
@@ -153,18 +153,14 @@
       <div class="flex_center">
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>
-          <input type="text" id="recommender_name" placeholder="Name (Optional)" /> <br />
-          <textarea
-            id="new_recommendation"
-            cols="500"
-            rows="10"
-            placeholder="Message"
-          ></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">
-              Submit
-            </button>
-          </div>
+          <form id="recommendForm" action="https://formspree.io/f/xqallzkl" method="POST">
+            <input type="text" id="recommender_name" name="name" placeholder="Name (Optional)" /><br />
+            <input type="email" name="email" placeholder="Your Email (Optional)" /><br />
+            <textarea id="new_recommendation" name="message" placeholder="Your Recommendation" required></textarea><br />
+            <div class="flex_center">
+              <button type="submit">Send Recommendation</button>
+            </div>
+          </form>
         </fieldset>
       </div>
     </section>
