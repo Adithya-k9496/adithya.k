@@ -3,6 +3,7 @@ document.getElementById("suggestionForm").addEventListener("submit", async funct
 
     let form = event.target;
     let formData = new FormData(form);
+    let popupMessage = document.querySelector("#popup h3");
 
     try {
         let response = await fetch(form.action, {
@@ -12,14 +13,19 @@ document.getElementById("suggestionForm").addEventListener("submit", async funct
         });
 
         if (response.ok) {
+            // Show success message in popup
+            popupMessage.textContent = "✅ Thanks for your suggestion!";
             showPopup(true);
-
             form.reset();
         } else {
-            alert("❌ Oops! Something went wrong. Please try again.");
+            // Show error message in popup
+            popupMessage.textContent = "❌ Oops! Something went wrong. Please try again.";
+            showPopup(true);
         }
     } catch (error) {
-        alert("⚠️ Network error. Please try again.");
+        // Show network error message in popup
+        popupMessage.textContent = "⚠️ Network error. Please try again.";
+        showPopup(true);
         console.error("Form submission error:", error);
     }
 });
