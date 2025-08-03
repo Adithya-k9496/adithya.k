@@ -140,25 +140,26 @@
       </a>
     </section>
 
-    <!-- Recommendations -->
-    <section id="recommendations">
+    <!-- suggestion -->
+    <section id="suggestion">
       <h2>Recommendations</h2>
-      <div class="all_recommendations" id="all_recommendations">
-        <!-- JavaScript will populate recommendations here -->
+      <h5><u><i><b>kindly provide your suggestion regarding to improve this portfolio</b></i></u></h5>
+      <div class="all_suggestion" id="all_suggestion">
+        <!-- JavaScript will populate suggestion here -->
       </div>
     </section>
 
-    <!-- Recommendation Form -->
+    <!-- suggestion Form -->
     <section id="contact">
       <div class="flex_center">
         <fieldset>
-          <legend class="introduction">Leave a Recommendation</legend>
-          <form id="recommendForm" action="https://formspree.io/f/xqallzkl" method="POST">
-            <input type="text" id="recommender_name" name="name" placeholder="Name (Optional)" /><br />
+          <legend class="introduction">Leave a suggestion"</legend>
+          <form id="suggForm" action="https://formspree.io/f/xqallzkl" method="POST">
+            <input type="text" id="sugesstor_name" name="name" placeholder="Name (Optional)" /><br />
             <input type="email" name="email" placeholder="Your Email (Optional)" /><br />
-            <textarea id="new_recommendation" name="message" placeholder="Your Recommendation" required></textarea><br />
+            <textarea id="new_suggestion" name="message" placeholder="Your suggestion" required></textarea><br />
             <div class="flex_center">
-              <button type="submit">Send Recommendation</button>
+              <button type="submit">Send suggestion</button>
             </div>
           </form>
         </fieldset>
@@ -180,7 +181,7 @@
     <div class="popup" id="popup">
       <div class="popup-content">
         <img src="html_finalprojimages/checkmark--outline.svg" alt="Checkmark" />
-        <h3>Thanks for leaving a recommendation!</h3>
+        <h3>Thanks for leaving a suggestion!</h3>
         <button onclick="showPopup(false)">Ok</button>
       </div>
     </div>
