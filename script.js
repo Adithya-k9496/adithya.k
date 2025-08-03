@@ -1,4 +1,4 @@
-document.getElementById("recommendForm").addEventListener("submit", async function(event) {
+document.getElementById("suggestionForm").addEventListener("submit", async function(event) {
     event.preventDefault();
 
     let form = event.target;
