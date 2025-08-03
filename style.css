@@ -41,8 +41,6 @@ body {
   padding-left: 2cm;
   background-color: #f9f5ff;
   font-size: 30px;
-  border-radius: 15px;
-  transform: translateX(10px);
 }
 
 .profile_name .contact_info {
@@ -106,16 +104,13 @@ h2 {
 }
 
 .profile_image {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 50%; /* for circular profile */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border-radius: 10px;
 }
-
-
 
 /* Skills */
 
@@ -212,9 +207,9 @@ h2 {
   filter: grayscale(0%);
 }
 
-/* Recommendations */
+/* suggestion */
 
-.all_recommendations {
+.all_suggestion {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -222,7 +217,7 @@ h2 {
   padding: 20px;
 }
 
-.recommendation {
+.suggestion {
   font-style: italic;
   text-align: left;
   width: 21.875rem;
@@ -236,13 +231,13 @@ h2 {
   height: auto;
 }
 
-.recommendation span {
+.suggestion span {
   color: #7600bc;
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.recommendation strong {
+.suggestion strong {
   color: #333;
   font-size: 16px;
   font-style: normal;
@@ -320,7 +315,7 @@ h2 {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* Recommendation Form */
+/* suggestion Form */
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
