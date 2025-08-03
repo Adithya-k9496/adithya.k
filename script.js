@@ -13,17 +13,15 @@ document.getElementById("suggestionForm").addEventListener("submit", async funct
         });
 
         if (response.ok) {
-            // Show success message in popup
+            // ✅ Show your custom popup message (No Formspree redirect)
             popupMessage.textContent = "✅ Thanks for your suggestion!";
             showPopup(true);
             form.reset();
         } else {
-            // Show error message in popup
             popupMessage.textContent = "❌ Oops! Something went wrong. Please try again.";
             showPopup(true);
         }
     } catch (error) {
-        // Show network error message in popup
         popupMessage.textContent = "⚠️ Network error. Please try again.";
         showPopup(true);
         console.error("Form submission error:", error);
