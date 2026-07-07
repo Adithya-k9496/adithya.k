@@ -679,6 +679,28 @@ h2::after {
   color: var(--primary-color);
 }
 
+.project-link {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-link:hover {
+  color: var(--secondary-color);
+}
+
+.project-link-icon {
+  opacity: 0.7;
+  transition: var(--transition);
+}
+
+.project-link:hover .project-link-icon {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
 .project-desc {
   color: var(--text-secondary);
   font-size: 0.95rem;
